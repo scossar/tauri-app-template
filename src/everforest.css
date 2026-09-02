@@ -1,0 +1,17 @@
+/* Everforest Dark palette. Component styling lives in styles.css. */
+:root[data-theme="everforest"] {
+  --background: #2d353b;
+  --foreground: #d3c6aa;
+  --heading: #a7c080;
+  --link: #7fbbb3;
+  --link-hover: #83c092;
+  --control-background: #343f44;
+  --control-background-active: #475258;
+  --control-border: #475258;
+  --control-border-active: #a7c080;
+  --control-foreground: #d3c6aa;
+  --control-placeholder: #859289;
+  --control-shadow: rgba(0, 0, 0, 0.35);
+
+  color-scheme: dark;
+}

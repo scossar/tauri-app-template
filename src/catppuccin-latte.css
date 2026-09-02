@@ -1,0 +1,17 @@
+/* Catppuccin Latte palette. Component styling lives in styles.css. */
+:root[data-theme="catppuccin-latte"] {
+  --background: #eff1f5;
+  --foreground: #4c4f69;
+  --heading: #8839ef;
+  --link: #1e66f5;
+  --link-hover: #7287fd;
+  --control-background: #e6e9ef;
+  --control-background-active: #dce0e8;
+  --control-border: #bcc0cc;
+  --control-border-active: #1e66f5;
+  --control-foreground: #4c4f69;
+  --control-placeholder: #9ca0b0;
+  --control-shadow: rgba(76, 79, 105, 0.2);
+
+  color-scheme: light;
+}

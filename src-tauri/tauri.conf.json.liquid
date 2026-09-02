@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "theme-switcher-example",
+  "productName": "{{ project-name }}",
   "version": "0.1.0",
-  "identifier": "com.scossar.theme-switcher-example",
+  "identifier": "com.scossar.{{ project-name }}",
   "build": {
     "beforeDevCommand": "npm run dev",
     "devUrl": "http://localhost:1420",
@@ -14,7 +14,7 @@
     "withGlobalTauri": true,
     "windows": [
       {
-        "title": "theme-switcher-example",
+        "title": "{{ project-name }}",
         "width": 800,
         "height": 600,
         "decorations": false

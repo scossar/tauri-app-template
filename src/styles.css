@@ -1,0 +1,149 @@
+.logo.vite:hover {
+  filter: drop-shadow(0 0 2em #747bff);
+}
+
+.logo.typescript:hover {
+  filter: drop-shadow(0 0 2em #2d79c7);
+}
+:root {
+  --background: #f6f6f6;
+  --foreground: #0f0f0f;
+  --heading: #0f0f0f;
+  --link: #646cff;
+  --link-hover: #535bf2;
+  --control-background: #ffffff;
+  --control-background-active: #e8e8e8;
+  --control-border: transparent;
+  --control-border-active: #396cd8;
+  --control-foreground: #0f0f0f;
+  --control-placeholder: #747474;
+  --control-shadow: rgba(0, 0, 0, 0.2);
+
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: var(--foreground);
+  background-color: var(--background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+header {
+  align-items: center;
+  display: flex;
+}
+
+.container {
+  margin: 0;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: 0.75s;
+}
+
+.logo.tauri:hover {
+  filter: drop-shadow(0 0 2em #24c8db);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  font-weight: 500;
+  color: var(--link);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+h1 {
+  color: var(--heading);
+  text-align: center;
+}
+
+input,
+button,
+select {
+  border-radius: 8px;
+  border: 1px solid var(--control-border);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: var(--control-foreground);
+  background-color: var(--control-background);
+  transition: border-color 0.25s;
+  box-shadow: 0 2px 2px var(--control-shadow);
+}
+
+button {
+  cursor: pointer;
+}
+
+.theme-switcher {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.theme-switcher select {
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+}
+
+button:hover,
+select:hover,
+input:focus {
+  border-color: var(--control-border-active);
+}
+
+button:active {
+  background-color: var(--control-background-active);
+  border-color: var(--control-border-active);
+}
+
+input::placeholder {
+  color: var(--control-placeholder);
+}
+
+input,
+button,
+select {
+  outline: none;
+}
+
+#greet-input {
+  margin-right: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #2f2f2f;
+    --foreground: #f6f6f6;
+    --heading: #f6f6f6;
+    --link-hover: #24c8db;
+    --control-background: #0f0f0f98;
+    --control-background-active: #0f0f0f69;
+    --control-foreground: #ffffff;
+    --control-placeholder: #a0a0a0;
+  }
+}

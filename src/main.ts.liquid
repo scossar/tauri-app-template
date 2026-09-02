@@ -1,0 +1,42 @@
+const themes = [
+  "default",
+  "tokyo-night",
+  "catppuccin-latte",
+  "everforest",
+] as const;
+
+type Theme = (typeof themes)[number];
+
+const themeStorageKey = "{{ project-name }}.theme";
+
+function isTheme(value: string | null): value is Theme {
+  return value !== null && themes.includes(value as Theme);
+}
+
+function applyTheme(theme: Theme) {
+  if (theme === "default") {
+    document.documentElement.removeAttribute("data-theme");
+  } else {
+    document.documentElement.dataset.theme = theme;
+  }
+
+  localStorage.setItem(themeStorageKey, theme);
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  const themeSelect =
+    document.querySelector<HTMLSelectElement>("#theme-select");
+  const savedTheme = localStorage.getItem(themeStorageKey);
+  const initialTheme: Theme = isTheme(savedTheme) ? savedTheme : "default";
+
+  applyTheme(initialTheme);
+
+  if (themeSelect) {
+    themeSelect.value = initialTheme;
+    themeSelect.addEventListener("change", () => {
+      if (isTheme(themeSelect.value)) {
+        applyTheme(themeSelect.value);
+      }
+    });
+  }
+});

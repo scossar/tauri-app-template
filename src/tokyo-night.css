@@ -1,0 +1,19 @@
+/*
+ * A small Tokyo Night-inspired palette. Component styling lives in styles.css.
+ */
+:root[data-theme="tokyo-night"] {
+  --background: #1a1b26;
+  --foreground: #c0caf5;
+  --heading: #7dcfff;
+  --link: #7aa2f7;
+  --link-hover: #bb9af7;
+  --control-background: #24283b;
+  --control-background-active: #414868;
+  --control-border: #414868;
+  --control-border-active: #7aa2f7;
+  --control-foreground: #c0caf5;
+  --control-placeholder: #565f89;
+  --control-shadow: rgba(0, 0, 0, 0.35);
+
+  color-scheme: dark;
+}
