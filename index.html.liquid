@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="/src/tokyo-night.css" />
+    <link rel="stylesheet" href="/src/catppuccin-latte.css" />
+    <link rel="stylesheet" href="/src/everforest.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <script type="module" src="/src/main.ts" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <span data-tauri-drag-region>Theme switcher example</span>
+      <label class="theme-switcher" for="theme-select">
+        Theme
+        <select id="theme-select">
+          <option value="default">Default</option>
+          <option value="tokyo-night">Tokyo Night</option>
+          <option value="catppuccin-latte">Catppuccin Latte</option>
+          <option value="everforest">Everforest</option>
+        </select>
+      </label>
+    </header>
+    <main class="container">
+      <h1>Hello Tauri</h1>
+      <p>This is a test, this is only a test...</p>
+    </main>
+  </body>
+</html>
