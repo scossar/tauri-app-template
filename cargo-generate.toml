@@ -1,2 +1,9 @@
 [template]
-ignore = ["src-tauri/icons"]
+include = [
+  "package.json.liquid",
+  "index.html.liquid",
+  "src/main.ts.liquid",
+  "src-tauri/Cargo.toml.liquid",
+  "src-tauri/tauri.conf.json.liquid",
+  "src-tauri/src/main.rs.liquid",
+]
