@@ -134,16 +134,3 @@ select {
 #greet-input {
   margin-right: 5px;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #2f2f2f;
-    --foreground: #f6f6f6;
-    --heading: #f6f6f6;
-    --link-hover: #24c8db;
-    --control-background: #0f0f0f98;
-    --control-background-active: #0f0f0f69;
-    --control-foreground: #ffffff;
-    --control-placeholder: #a0a0a0;
-  }
-}
